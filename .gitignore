@@ -1,0 +1,48 @@
+.env
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+env/
+.venv/
+pythonenv*/
+
+# Python package and build artifacts
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.whl
+*.tar.gz
+*.zip
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.log.*
+*.tmp
+*.bak
+*.swp
+
+# Testing and coverage
+.coverage
+coverage.xml
+*.cover
+*.pytest_cache/
