@@ -47,6 +47,11 @@ def query(sql, params=None, commit=False):
     cur = db.cursor(dictionary=True)
     cur.execute(sql, params or {})
     if commit:
+        while True:
+            if cur.with_rows:
+                cur.fetchall()
+            if not cur.nextset():
+                break
         db.commit()
         cur.close()
         return None
